@@ -8,6 +8,7 @@ class Array(object):
     def __init__(self, sizeOfArray, arrayType = int):
         self.sizeOfArray = len(list(map(arrayType, range(sizeOfArray))))
         self.arrayItems =[arrayType(0)] * sizeOfArray    # initialize array with zeroes
+        self.arrayType = arrayType
 
     def __str__(self):
         return ' '.join([str(i) for i in self.arrayItems])
@@ -44,6 +45,7 @@ class Array(object):
         if(self.sizeOfArray > position):
             for i in range(position, self.sizeOfArray - 1):
                 self.arrayItems[i] = self.arrayItems[i + 1]
+            self.arrayItems[i + 1] = self.arrayType(0)
         else:
             print('Array size is:', self.sizeOfArray)
 
