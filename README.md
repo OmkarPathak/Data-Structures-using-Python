@@ -8,7 +8,7 @@ Pune, Maharashtra, India.<br />
 # Arrays
 
 * [Arrays](https://github.com/OmkarPathak/Data-Structures-using-Python/blob/master/Arrays/Arrays.ipynb)
-    * [Array](Arrays.py)
-    * [Reversing an Array](P01_ReversingArray.py)
-    * [Array Rotation](P02_ArrayRotation.py)
-    * [Get the missing number](P03_GetMissingNumber.py)
+    * [Array](Arrays/Arrays.py)
+    * [Reversing an Array](Arrays/P01_ReversingArray.py)
+    * [Array Rotation](Arrays/P02_ArrayRotation.py)
+    * [Get the missing number](Arrays/P03_GetMissingNumber.py)
