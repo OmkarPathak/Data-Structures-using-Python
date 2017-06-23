@@ -20,3 +20,12 @@ Pune, Maharashtra, India.<br />
     * [Doubly Linked List implementation](Linked%20Lists/DoublyLinkedList.py)
     * [Finding the length of linked list](Linked%20Lists/P01_FindingLengthOfLinkedList.py)
     * [Reversing the linked list](Linked%20Lists/P02_ReversingLinkedList.py)
+
+# Stack
+
+* [Stack Concept](https://github.com/OmkarPathak/Data-Structures-using-Python/tree/master/Stack/Stack.ipynb)
+    * [Stack implementation](https://github.com/OmkarPathak/Data-Structures-using-Python/tree/master/Stack/Stack.py)
+    * [Infix to Postfix conversion](Stack/P01_InfixToPostfix.py)
+    * [Balanced Parenthesis](Stack/P02_BalancedParenthsis.py)
+    * [Decimal to Binary conversion using Stack](Stack/P03_DecimalToBinary.py)
+    * [Reversing a String using stack](Stack/P04_ReverseString.py)
