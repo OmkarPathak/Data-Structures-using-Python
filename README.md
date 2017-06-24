@@ -29,3 +29,11 @@ Pune, Maharashtra, India.<br />
     * [Balanced Parenthesis](Stack/P02_BalancedParenthesis.py)
     * [Decimal to Binary conversion using Stack](Stack/P03_DecimalToBinary.py)
     * [Reversing a String using stack](Stack/P04_ReverseString.py)
+
+# Queue
+
+* [Queue Concept](https://github.com/OmkarPathak/Data-Structures-using-Python/tree/master/Queue/Queue.ipynb)
+    * [Queue implementation](Queue/Queue.py)
+    * [Circular Queue](Queue/CircularQueue.py)
+    * [Double Ended Queue](Queue/Deque.py)
+    * [Priority Queue](Queue/PriorityQueue.py)
