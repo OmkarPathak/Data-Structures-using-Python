@@ -34,6 +34,6 @@ Pune, Maharashtra, India.<br />
 
 * [Queue Concept](https://github.com/OmkarPathak/Data-Structures-using-Python/tree/master/Queue/Queue.ipynb)
     * [Queue implementation](Queue/Queue.py)
-    * [Circular Queue](Queue/CircularQueue.py)
+    * [Circular Queue](Queue/CicularQueue.py)
     * [Double Ended Queue](Queue/Deque.py)
     * [Priority Queue](Queue/PriorityQueue.py)
