@@ -48,3 +48,10 @@ Pune, Maharashtra, India.<br />
     * [Construct tree from inorder and preorder](Trees/P03_TreeFromInorderAndPreorder.py)
     * [Finding root to leaf paths](Trees/P04_RootToLeafPaths.py)
     * [Finding the inorder predecessor and successor](Trees/P05_InorderPredecessorAndSuccessor.py)
+
+# Graph
+
+* [Graph Concept](https://github.com/OmkarPathak/Data-Structures-using-Python/tree/master/Graph/Graph.ipynb)
+    * [Graph implementation](Graph/Graph.py)
+    * [Breadth First Search Traversal](Graph/P01_BreadthFirstSearch.py)
+    * [Depth First Search Traversal](Graph/P02_DepthFirstSearch.py)
