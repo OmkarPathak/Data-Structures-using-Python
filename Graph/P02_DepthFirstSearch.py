@@ -6,6 +6,7 @@ class Graph():
 
     # for printing the Graph vertexes
     def printGraph(self):
+        print(self.vertex)
         for i in self.vertex.keys():
             print(i,' -> ', ' -> '.join([str(j) for j in self.vertex[i]]))
 
@@ -34,7 +35,7 @@ class Graph():
         print(startVertex, end = ' ')
 
         # Recur for all the vertexes that are adjacent to this node
-        for i in self.vertex[startVertex]:
+        for i in self.vertex.keys():
             if visited[i] == False:
                 self.DFSRec(i, visited)
 
