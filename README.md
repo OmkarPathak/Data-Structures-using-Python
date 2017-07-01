@@ -55,3 +55,7 @@ Pune, Maharashtra, India.<br />
     * [Graph implementation](Graph/Graph.py)
     * [Breadth First Search Traversal](Graph/P01_BreadthFirstSearch.py)
     * [Depth First Search Traversal](Graph/P02_DepthFirstSearch.py)
+    * [Detect Cycle in Directed Graph](Graph/P03_DetectCycleInDirectedGraph.py)
+    * [Detect Cycle in Undirected Graph](Graph/P04_DetectCycleInUndirectedGraph.py)
+    * [Topologocal Sort](Graph/P05_TopologicalSort.py)
+    * [Prim's Algorithm using Adjacency Matrix](Graph/P06_Prim's-Algorithm.py)
