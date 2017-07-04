@@ -59,3 +59,10 @@ Pune, Maharashtra, India.<br />
     * [Detect Cycle in Undirected Graph](Graph/P04_DetectCycleInUndirectedGraph.py)
     * [Topologocal Sort](Graph/P05_TopologicalSort.py)
     * [Prim's Algorithm using Adjacency Matrix](Graph/P06_Prim's-Algorithm.py)
+
+# Heap
+
+* [Heap Concept](https://github.com/OmkarPathak/Data-Structures-using-Python/blob/master/Heap/Heap.ipynb)
+    * [Heap implementation (Min Heap)](Heap/Heap.py)
+    * [Heap Sort](Heap/P01_HeapSort.py)
+    * [Implementing a Max Heap](Heap/P02_MaxHeap.py)
