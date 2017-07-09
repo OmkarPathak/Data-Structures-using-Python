@@ -12,6 +12,7 @@ Pune, Maharashtra, India.<br />
     * [Reversing an Array](Arrays/P01_ReversingArray.py)
     * [Array Rotation](Arrays/P02_ArrayRotation.py)
     * [Get the missing number](Arrays/P03_GetMissingNumber.py)
+    * [Check the number that occurs odd number of times](Arrays/P04_OddNumberOfTimes.py)
 
 # Linked Lists
 
