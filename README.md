@@ -73,3 +73,4 @@ Pune, Maharashtra, India.<br />
 
 * [Fibonacci Series](Dynamic%20Programming/P01_Fibonnaci.py)
 * [Longest Increasing Subsequence](Dynamic%20Programming/P02_LongestIncreasingSubsequence.py)
+* [Longest Continuous Odd Subsequence](Dynamic%20Programming/P03_LongestContinuousOddSubsequence.py)
