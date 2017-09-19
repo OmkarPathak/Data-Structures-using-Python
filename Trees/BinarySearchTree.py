@@ -47,7 +47,7 @@ class Node(object):
     def delete(self, data):
         ''' For deleting the node '''
         if self is None:
-            return root
+            return None
 
         # if current node's data is less than that of root node, then only search in left subtree else right subtree
         if data < self.data:
