@@ -35,7 +35,7 @@ class Queue(object):
         if self.isEmpty():
             return -1          # queue underflow
         else:
-            self.queue.pop()
+            self.queue.pop(0)
             self.size -= 1
             if self.size == 0:
                 self.front = self.rear = 0
