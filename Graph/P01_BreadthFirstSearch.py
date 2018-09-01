@@ -1,8 +1,9 @@
 # Author: OMKAR PATHAK
-
+# Error fixed by: Rahul Jain(rahuldkjain)
 class Graph():
     def __init__(self):
         self.vertex = {}
+        self.noOfNodes = 0
 
     # for printing the Graph vertexes
     def printGraph(self):
@@ -20,7 +21,7 @@ class Graph():
 
     def BFS(self, startVertex):
         # Take a list for stoting already visited vertexes
-        visited = [False] * len(self.vertex)
+        visited = [False] * self.noOfNodes
 
         # create a list to store all the vertexes for BFS
         queue = []
@@ -34,10 +35,12 @@ class Graph():
             print(startVertex, end = ' ')
 
             # mark all adjacent nodes as visited and print them
-            for i in self.vertex[startVertex]:
-                if visited[i] == False:
-                    queue.append(i)
-                    visited[i] = True
+            if startVertex in self.vertex.keys():
+                child = self.vertex[startVertex]
+                for i in child:
+                    if visited[i] == False:
+                        queue.append(i)
+                        visited[i] = True
 
 if __name__ == '__main__':
     g = Graph()
@@ -47,6 +50,7 @@ if __name__ == '__main__':
     g.addEdge(2, 0)
     g.addEdge(2, 3)
     g.addEdge(3, 3)
+    g.noOfNodes = 4
 
     g.printGraph()
     print('BFS:')
