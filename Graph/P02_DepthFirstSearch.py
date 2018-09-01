@@ -1,8 +1,9 @@
 # Author: OMKAR PATHAK
-
+# Edited and corrected by: Rahul Jain(rahuldkjain)
 class Graph():
     def __init__(self):
         self.vertex = {}
+        self.noOfNodes = 0
 
     # for printing the Graph vertexes
     def printGraph(self):
@@ -21,7 +22,7 @@ class Graph():
 
     def DFS(self):
         # visited array for storing already visited nodes
-        visited = [False] * len(self.vertex)
+        visited = [False] * self.noOfNodes
 
         # call the recursive helper function
         for i in range(len(self.vertex)):
@@ -35,7 +36,9 @@ class Graph():
         print(startVertex, end = ' ')
 
         # Recur for all the vertexes that are adjacent to this node
-        for i in self.vertex.keys():
+        if startVertex in self.vertex.keys():
+          adjacentNodes = self.vertex[startVertex]
+          for i in adjacentNodes:
             if visited[i] == False:
                 self.DFSRec(i, visited)
 
@@ -47,15 +50,7 @@ if __name__ == '__main__':
     g.addEdge(2, 0)
     g.addEdge(2, 3)
     g.addEdge(3, 3)
-
+    g.noOfNodes = 4
     g.printGraph()
     print('DFS:')
     g.DFS()
-
-    # OUTPUT:
-    # 0  ->  1 -> 2
-    # 1  ->  2
-    # 2  ->  0 -> 3
-    # 3  ->  3
-    # DFS:
-    # 0 1 2 3
