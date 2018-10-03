@@ -22,11 +22,11 @@ def SieveOfEratosthenes(n):
     # Print all prime numbers 
     for p in range(2, n): 
         if prime[p]: 
-            print p, 
+            print (p), 
   
 # driver program 
 if __name__=='__main__': 
     n = 30
-    print "Following are the prime numbers smaller", 
-    print "than or equal to", n 
+    print ("Following are the prime numbers smaller"), 
+    print ("than or equal to", n )
     SieveOfEratosthenes(n) 
