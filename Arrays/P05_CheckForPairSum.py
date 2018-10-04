@@ -4,8 +4,10 @@
 # in S whose sum is exactly x.
 
 def checkSum(array, sum):
-    # sort the array in descending order
-    array = quickSort(array)
+    # sort the array in ascending order
+    # new changes : made use of Python's inbuilt Merge Sort method
+    # Reason for such change : Worst case Time complexity of Quick Sort is O(n^2) whereas Worst Case Complexity of Merge Sort is O(nlog(n))
+    array = sorted(array)
 
     leftIndex = 0
     rightIndex = len(array) - 1
@@ -20,14 +22,14 @@ def checkSum(array, sum):
 
     return False, False
 
-def quickSort(array):
-    if len(array) <= 1:
-        return array
-    pivot = array[len(array) // 2]
-    left = [x for x in array if x < pivot]
-    middle = [x for x in array if x == pivot]
-    right = [x for x in array if x > pivot]
-    return quickSort(left) + middle + quickSort(right)
+##def quickSort(array):
+##    if len(array) <= 1:
+##        return array
+##    pivot = array[len(array) // 2]
+##    left = [x for x in array if x < pivot]
+##    middle = [x for x in array if x == pivot]
+##    right = [x for x in array if x > pivot]
+##    return quickSort(left) + middle + quickSort(right)
 
 if __name__ == '__main__':
     myArray = [10, 20, 30, 40, 50]
@@ -37,4 +39,4 @@ if __name__ == '__main__':
     if(number1 and number2):
         print('Array has elements:', number1, 'and', number2, 'with sum:', sum)
     else:
-        print('Array doesn\'t has elements with the sum:', sum)
+        print('Array doesn\'t have elements with the sum:', sum)
