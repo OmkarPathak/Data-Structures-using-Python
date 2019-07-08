@@ -14,7 +14,7 @@ def fibonacci(number):
 
 # traditional recursive fibonacci function
 def fibonacciRec(number):
-    if number <= 1:
+    if number == 1 or number == 0:
         return number
     else:
         return (fibonacciRec(number - 1) + fibonacciRec(number - 2))
