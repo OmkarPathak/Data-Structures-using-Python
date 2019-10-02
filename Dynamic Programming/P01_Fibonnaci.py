@@ -19,6 +19,15 @@ def fibonacciRec(number):
     else:
         return (fibonacciRec(number - 1) + fibonacciRec(number - 2))
 
+# improved recursive fibonacci function
+def fib_memoization(n, lookup): 
+    if n == 0 or n == 1 : 
+        lookup[n] = n 
+    if lookup[n] is None: 
+        lookup[n] = fib(n-1 , lookup)  + fib(n-2 , lookup)  
+    return lookup[n]
+
+
 if __name__ == '__main__':
     userInput = int(input('Enter the number: '))
 
@@ -35,5 +44,11 @@ if __name__ == '__main__':
 
     startTime = time.time()
     result = fibonacciRec(userInput)
+    stopTime = time.time()
+    print('Time:', (stopTime - startTime), 'Result:', result)
+    
+    startTime = time.time()
+    lookup=[None]*(101) 
+    result = fib_memoization(userInput,lookup)
     stopTime = time.time()
     print('Time:', (stopTime - startTime), 'Result:', result)
