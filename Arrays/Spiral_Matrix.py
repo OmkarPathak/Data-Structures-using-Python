@@ -1,3 +1,16 @@
+'''
+ Given a 2D array, print it in spiral form. See the following examples.
+
+Input:
+        1    2   3   4
+        5    6   7   8
+        9   10  11  12
+        13  14  15  16
+Output: 
+1 2 3 4 8 12 16 15 14 13 9 5 6 7 11 10 
+
+'''
+
 # Complexity Analysis
 
 # Time Complexity: O(N)O(N), where NN is the total number of elements in the input matrix. We add every element in the matrix to our final answer.
