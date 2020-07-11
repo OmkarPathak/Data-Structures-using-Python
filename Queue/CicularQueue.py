@@ -24,7 +24,7 @@ class CircularQueue(object):
     def isFull(self):
         return (self.rear + 1) % self.limit == self.front
 
-    # for adding an element at the rear end
+    # for adding an element to the queue
     def enqueue(self, data):
         if self.isFull():
             print('Queue is Full!')
@@ -36,7 +36,7 @@ class CircularQueue(object):
             self.rear = (self.rear + 1) % self.limit  
             self.queue[self.rear] = data 
 
-    # for deleting the deleting an element from front end
+    # for removing an element from the queue
     def dequeue(self):
         if self.isEmpty():
             print('Queue is Empty!')
