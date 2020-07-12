@@ -2,41 +2,49 @@
 
 class CircularQueue(object):
     def __init__(self, limit = 10):
-        self.front = None
-        self.rear = None
         self.limit = limit
-        self.queue = []
+        self.queue = [None for i in range(limit)]  
+        self.front = self.rear = -1
 
     # for printing the queue
     def __str__(self):
-        return ' '.join([str(i) for i in self.queue])
+        if (self.rear >= self.front):
+            return ' '.join([str(self.queue[i]) for i in range(self.front, self.rear + 1)])
+  
+        else: 
+            q1 = ' '.join([str(self.queue[i]) for i in range(self.front, self.limit)])
+            q2 = ' '.join([str(self.queue[i]) for i in range(0, self.rear + 1)])
+            return q1 + ' ' + q2
 
     # for checking if queue is empty
     def isEmpty(self):
-        return self.queue == []
+        return self.front == -1
 
     # for checking if the queue is full
     def isFull(self):
-        return len(self.queue) == self.limit
+        return (self.rear + 1) % self.limit == self.front
 
-    # for adding an element at the rear end
+    # for adding an element to the queue
     def enqueue(self, data):
         if self.isFull():
             print('Queue is Full!')
         elif self.isEmpty():
-            self.front = self.rear = 0
-            self.queue.append(data)
+            self.front = 0
+            self.rear = 0
+            self.queue[self.rear] = data
         else:
-            self.rear += 1
-            self.queue.append(data)
+            self.rear = (self.rear + 1) % self.limit  
+            self.queue[self.rear] = data 
 
-    # for deleting the deleting an element from front end
+    # for removing an element from the queue
     def dequeue(self):
         if self.isEmpty():
             print('Queue is Empty!')
+        elif (self.front == self.rear):  
+            self.front = -1
+            self.rear = -1
         else:
-            self.front += 1
-            return self.queue.pop(0)
+            self.front = (self.front + 1) % self.limit 
 
 if __name__ == '__main__':
     myCQ = CircularQueue(5)
