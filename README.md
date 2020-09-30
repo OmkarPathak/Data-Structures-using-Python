@@ -23,6 +23,16 @@ Pune, Maharashtra, India.<br />
     * [Finding the length of linked list](Linked%20Lists/P01_FindingLengthOfLinkedList.py)
     * [Reversing the linked list](Linked%20Lists/P02_ReversingLinkedList.py)
 
+# Maths
+
+* [Maths Concept](Maths)
+    * [Catalan Number](Maths/catalan.py)
+    * [Check Prime](Maths/check_prime.py)
+    * [GCD](Maths/gcd.py)
+    * [Prime Factors](Maths/prime_factors.py)
+    * [Sieve of eratosthenes](Maths/sieve.py)
+
+
 # Stack
 
 * [Stack Concept](https://github.com/OmkarPathak/Data-Structures-using-Python/tree/master/Stack/Stack.ipynb)
