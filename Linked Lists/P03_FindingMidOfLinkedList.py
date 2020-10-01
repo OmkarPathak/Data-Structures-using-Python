@@ -3,6 +3,16 @@
 import SinglyLinkedList
 
 def findMid(myLinkedList):
+    '''
+    The approch is simple:
+    1. creating a fast pointer that is moving and skipping one element of the linked-list
+    2. creating a slow pointer that goes through every next element in the linked-list
+    3. when the fast pointer has reached the end the slower one is supposed to be at mid
+    4. return the element pointed by slow pointer
+
+    Time-O(logN) where N is the number of elements in linked-list
+
+    '''
     if not myLinkedList or not myLinkedList.head.next: return myLinkedList.head
     
     slow = myLinkedList.head
