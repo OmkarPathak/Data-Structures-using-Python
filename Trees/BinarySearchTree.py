@@ -44,23 +44,45 @@ class Node(object):
 
         return current
 
-    def delete(self, data):
+    def maxValueNode(self, node):
+        current = node
+
+        # loop down to find the leftmost leaf
+        while(current.rightChild is not None):
+            current = current.rightChild
+
+        return current
+
+
+    def delete(self, data,root):
         ''' For deleting the node '''
         if self is None:
             return None
 
         # if current node's data is less than that of root node, then only search in left subtree else right subtree
         if data < self.data:
-            self.leftChild = self.leftChild.delete(data)
+            self.leftChild = self.leftChild.delete(data,root)
         elif data > self.data:
-            self.rightChild = self.rightChild.delete(data)
+            self.rightChild = self.rightChild.delete(data,root)
         else:
             # deleting node with one child
             if self.leftChild is None:
+
+                if self == root:
+                    temp = self.minValueNode(self.rightChild)
+                    self.data = temp.data
+                    self.rightChild = self.rightChild.delete(temp.data,root) 
+
                 temp = self.rightChild
                 self = None
                 return temp
             elif self.rightChild is None:
+
+                if self == root:
+                    temp = self.maxValueNode(self.leftChild)
+                    self.data = temp.data
+                    self.leftChild = self.leftChild.delete(temp.data,root) 
+
                 temp = self.leftChild
                 self = None
                 return temp
@@ -69,7 +91,7 @@ class Node(object):
             # first get the inorder successor
             temp = self.minValueNode(self.rightChild)
             self.data = temp.data
-            self.rightChild = self.rightChild.delete(temp.data)
+            self.rightChild = self.rightChild.delete(temp.data,root)
 
         return self
 
@@ -128,7 +150,7 @@ class Tree(object):
 
     def delete(self, data):
         if self.root is not None:
-            return self.root.delete(data)
+            return self.root.delete(data,self.root)
 
     def find(self, data):
         if self.root:
