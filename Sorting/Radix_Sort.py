@@ -5,6 +5,15 @@
 # digits of same place value. Then, sort the elements
 # according to their increasing/decreasing order.
 
+"""
+For doctests run following command:
+python -m doctest -v Radix_Sort.py
+or
+python3 -m doctest -v Radix_Sort.py
+For manual testing run:
+python Radix_Sort.py
+"""
+
 from math import log10
 from random import randint
 
@@ -17,6 +26,11 @@ def prefix_sum(array):
   return array
 
 def radixsort(l, base=10):
+  """
+  Examples:
+  >>> radixsort([0, 5, 3, 2, 2])
+  [0, 2, 2, 3, 5]
+  """
   passes = int(log10(max(l))+1)
   output = [0] * len(l)
 
