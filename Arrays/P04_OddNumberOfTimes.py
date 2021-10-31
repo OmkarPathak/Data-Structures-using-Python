@@ -8,7 +8,7 @@
 
 # NOTE: This will only work when there is only one number with odd number of occurences.
 
-def printOddOccurences(array):
+def print_odd_occurences(array):
     odd = 0
 
     for element in array:
@@ -17,6 +17,7 @@ def printOddOccurences(array):
 
     return odd
 
+
 if __name__ == '__main__':
     myArray = [3, 4, 1, 2, 4, 1, 2, 5, 6, 4, 6, 5, 3]
-    print(printOddOccurences(myArray))      # 4
+    print(print_odd_occurences(myArray))  # 4
